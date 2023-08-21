@@ -28,6 +28,8 @@ Because the Cairo language migrated to a Rust-inspired syntax, documentation pra
 ### Markdown
 
 Comments and documentation should be written with Markdown syntax.
+Documentation sections may be delineated through Markdown headings `#`.
+Some useful headings may include the contract name, `Panics`, `Examples`, `Arguments`, and `Returns`.
 
 ### Contract documentation
 
