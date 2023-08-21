@@ -160,6 +160,7 @@ mod MyContract {
     /// let c: felt252 = sum_minus_one(a, b);
     /// assert(c + 1 == a + b, "Should equal a + b");
     /// ```
+    #[external(v0)]
     fn sum_minus_one(arg1: felt252, arg2: felt252) -> felt252 {
         assert(arg1 != 0, "Cannot be zero");
         let sum: felt252 = arg1 + arg2;
