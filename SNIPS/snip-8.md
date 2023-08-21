@@ -36,7 +36,7 @@ Some useful headings may include the contract name, `Panics`, `Examples`, `Argum
 Contract documentation refers to an expositional overview of the contract.
 This may include a description of the contract itself and examples of use.
 Contract documentation may use the characters `//!` to communicate that it is contract documentation.
-This proposal recommends that contract documentation should start at the very first line of the module.
+This proposal recommends that contract documentation should start at the top of the file.
 
 #### SPDX license identifiers
 
