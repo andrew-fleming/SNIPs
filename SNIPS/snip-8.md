@@ -51,7 +51,6 @@ This proposal recommends that contract documentation should start at the very fi
 //!   #[storage]
 //!   struct Storage {}
 //!
-//!   #[external(v0)]
 //!   fn foo() {
 //!     MyContract.my_selector();
 //!   }
@@ -127,9 +126,8 @@ Below is a full example of how Cairo documentation and comments may be used.
 //!   #[storage]
 //!   struct Storage {}
 //!
-//!   #[external(v0)]
-//!   fn foo() {
-//!     MyContract.my_selector();
+//!   fn foo(a: felt252, b: felt252) -> felt252{
+//!     MyContract.sum_minus_one(a, b)
 //!   }
 //! }
 #[starknet::contract]
@@ -162,7 +160,7 @@ mod MyContract {
     /// let c: felt252 = sum_minus_one(a, b);
     /// assert(c + 1 == a + b, "Should equal a + b");
     /// ```
-    fn sum_minus_one(self: ContractState, arg1: felt252, arg2: felt252) -> felt252 {
+    fn sum_minus_one(arg1: felt252, arg2: felt252) -> felt252 {
         assert(arg1 != 0, "Cannot be zero");
         let sum: felt252 = arg1 + arg2;
         // Subtract `1` from the sum
