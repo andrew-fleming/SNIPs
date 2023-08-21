@@ -38,7 +38,14 @@ This may include a description of the contract itself and examples of use.
 Contract documentation may use the characters `//!` to communicate that it is contract documentation.
 This proposal recommends that contract documentation should start at the very first line of the module.
 
+#### SPDX license identifiers
+
+This proposal recommends that each contract includes an SPDX license identifier.
+For visibility purposes, this proposal also recommends beginning the contract documentation with an SPDX license identifier (which is similar to the recommended Solidity source file layout).
+
 ```rust
+//! SPDX-License-Identifier: MIT
+//!
 //! # MyContract and Implementation
 //!
 //! This is an example description of MyContract and some of its features.
@@ -114,6 +121,8 @@ fn foo(){
 Below is a full example of how Cairo documentation and comments may be used.
 
 ```rust
+//! SPDX-License-Identifier: MIT
+//!
 //! # MyContract and Implementation
 //!
 //! This is an example description of MyContract and some of its features.
