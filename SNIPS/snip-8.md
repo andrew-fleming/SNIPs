@@ -40,7 +40,7 @@ This proposal recommends that contract documentation should start at the very fi
 
 #### SPDX license identifiers
 
-This proposal recommends that each contract includes an SPDX license identifier.
+This proposal recommends that every contract includes an SPDX license identifier.
 For visibility purposes, this proposal also recommends beginning the contract documentation with an SPDX license identifier (which is similar to the recommended Solidity source file layout).
 
 ```rust
@@ -70,21 +70,12 @@ For visibility purposes, this proposal also recommends beginning the contract do
 
 Contract-element documentation refers to the specific element it's documenting e.g. contract method, event, implementation, etc.
 This may include a description of the element itself, examples of use, and panicable conditions.
-Some implementations may choose to include parameter and return descriptions.
+Some implementations may choose to include separate sections for parameter and return descriptions.
 Contract-element documentation may use the characters `///`.
 
 ```rust
 /// Returns the sum of `arg1` and `arg2`.
 /// `arg1` cannot be zero.
-///
-/// # Arguments
-///
-/// * `arg1` - A non-zero felt252 value.
-/// * `arg2` - A felt252 value.
-///
-/// # Returns
-///
-/// * Felt252 `arg` value.
 ///
 /// # Panics
 ///
@@ -149,15 +140,6 @@ mod MyContract {
 
     /// Returns the sum  minus one of `arg1` and `arg2`.
     /// `arg1` cannot be zero.
-    ///
-    /// # Arguments
-    ///
-    /// * `arg1` - A non-zero felt252 value.
-    /// * `arg2` - A felt252 value.
-    ///
-    /// # Returns
-    ///
-    /// * The sum of `arg1` and `arg2`.
     ///
     /// # Panics
     ///
