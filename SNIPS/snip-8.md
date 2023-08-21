@@ -172,6 +172,8 @@ mod MyContract {
 
 ## History
 
+This document was heavily inspired by [RFC-1574](https://github.com/rust-lang/rfcs/commit/9b39f573ff9fc230de7388fb515bac0794fe2e36) and proposes to supersede [SNIP-4](snip-4.md).
+
 ## Copyright
 
 Copyright and related rights waived via [MIT](../LICENSE).
