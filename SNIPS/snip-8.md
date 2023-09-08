@@ -138,7 +138,7 @@ mod MyContract {
     #[storage]
     struct Storage {}
 
-    /// Returns the sum  minus one of `arg1` and `arg2`.
+    /// Returns the sum minus one of `arg1` and `arg2`.
     /// `arg1` cannot be zero.
     ///
     /// # Panics
