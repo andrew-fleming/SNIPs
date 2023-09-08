@@ -11,7 +11,7 @@ created: 2023-08-21
 
 A standard for writing documentation and comments in Cairo contracts.
 
-Inspired by Rust comment conventions as defined in [RFC-1574](https://github.com/rust-lang/rfcs/commit/9b39f573ff9fc230de7388fb515bac0794fe2e36).
+Inspired by Rust comment conventions as defined in [RFC-1574](https://github.com/rust-lang/rfcs/blob/188cc17ad38b201867955fb4a51c306c0704b6cf/text/1574-more-api-documentation-conventions.md).
 
 ## Abstract
 
